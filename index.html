@@ -1,0 +1,899 @@
+<!--COSC 3P94 Project Phase 2, Group 17: Shivdeep, Karina, Jordan, Muditaa-->
+<!--INDEX.HTML-->
+<!-- Access published work on https://capture-editor.github.io/ -->
+<!--To run the files: right-click the index.html file in vs code and select “Open with live server.” 
+    This only works if the live server extension is installed,
+    Otherwise dragging and dropping file to browser should also run)-->
+
+<!-- Select images were found on open source (not copyrighted) icon/gifs websites -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        (function($) {
+            $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+                if (!$(this).next().hasClass('show')) {
+                    $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+                }
+                var $subMenu = $(this).next(".dropdown-menu");
+                $subMenu.toggleClass('show');
+
+                $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+                    $('.dropdown-submenu .show').removeClass("show");
+                });
+
+                return false;
+            });
+        })(jQuery)
+    </script>
+    <script>
+        function audio() {
+            alert("Audio Added to Project");
+        }
+
+        function adjustment() {
+            alert("Edit has been applied");
+        }
+
+        function presetsave() {
+            alert("Preset has been saved");
+        }
+
+        function preset() {
+            alert("Preset has been applied");
+        }
+
+        function charts() {
+            alert("Chart has been created");
+        }
+
+        function table() {
+            alert("Table has been created");
+        }
+
+        function colour() {
+            alert("Colour has been changed");
+        }
+
+        function component() {
+            alert("Component has been added");
+        }
+
+        function video() {
+            alert("Video has been added");
+        }
+
+        function template() {
+            alert("Template has been created. Add in your forms of media and edit options.");
+        }
+
+        function impor() {
+            alert("This allows you to import media");
+        }
+
+        function camera() {
+            alert("This allows you to take pictures to upload");
+        }
+
+        function vid() {
+            alert("This allows you to record media to upload");
+        }
+
+        function mic() {
+            alert("This allows you to record audio to upload");
+        }
+
+        function insta() {
+            alert("This allows direct export to Instagram");
+        }
+
+        function expor() {
+            alert("This allows the project to be exported to selected path");
+        }
+
+        function twitter() {
+            alert("This allows direct export to Twitter.");
+        }
+
+        function tiktok() {
+            alert("This allows direct export to TikTok");
+        }
+
+        function youtube() {
+            alert("This allows direct export to Youtube");
+        }
+
+        function tool() {
+            alert("Tool Selected, use it on the Frame Track");
+        }
+    </script>
+
+    <!--Title-->
+    <title>Capture</title>
+    <!--Navbar-->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg mainmenu py-0">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a href="#">New Project</a></li>
+                        <li><a href="#">Open Project</a></li>
+                        <li class="dropdown dropright">
+                            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Open Recent</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a href="#">My Birthday</a></li>
+                                <li><a href="#">Spring Break</a></li>
+                                <li><a href="#">Christmas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Save</a></li>
+                        <li><a href="#">Save As</a></li>
+                        <li><a href="#">Close Editor</a></li>
+                        <li><a href="#">Close Window</a></li>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Import</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a href="#">Import From Device</a></li>
+                        <li><a href="#">Record Video</a></li>
+                        <li><a href="#">Record Audio</a></li>
+                        <li><a href="#">Take Photo</a></li>
+                    </ul>
+                </li>
+
+                <!--<li class="active"><a href="#">Capture <span class="sr-only">(current)</span></a></li>-->
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Export</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a href="#">Export to Device</a></li>
+                        <li class="dropdown dropright">
+                            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Upload to</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">TikTok</a></li>
+                                <li><a href="#">Youtube</a></li>
+                                <li><a href="#">Facebook</a></li>
+                            </ul>
+                        </li>
+                        <li></li>
+                        <li class="dropdown dropright">
+                            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Share</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a href="#">Email</a></li>
+                                <li><a href="#">Teams</a></li>
+                                <li><a href="#">Discord</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Get Shareable Link</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <form class="form-inline" action="/action_page.php">
+                <input class="form-control mr-sm-2" type="text" placeholder="Help">
+                <button class="btn btn-light" type="submit">Search</button>
+            </form>
+
+        </div>
+    </nav>
+</head>
+<!--Body-->
+
+<body>
+    <!--Three Columns: Audio/Extras, Video Elements, Edits-->
+    <div class="container-fluid">
+        <div class="row">
+            <!--Audio Section-->
+            <div class="col-3">
+
+                <h3> Your Library </h3>
+
+                <div class="accordion shadow " id="accordion">
+                    <div class="card">
+                        <div class="card-header py-0" id="headingVid">
+                            <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseVid" aria-expanded="false" aria-controls="collapseVid" class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
+                                    Videos
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapseVid" class="collapse" aria-labelledby="headingVid" data-parent="#accordion">
+                            <div class="card-body">
+                                <div>
+                                    <a>Videos</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="video() " class="imgvid " src="https://media4.giphy.com/media/3ANXp7AKff6nu/giphy.gif " width="110 " height="80 ">
+                                    <img onclick="video() " class="imgvid " src="https://media.giphy.com/media/6QsgoKeT4YIwkTiOmd/giphy.gif " width="80 " height="120 ">
+                                    <img onclick="video() " class="imgvid " src="http://cdn.lowgif.com/full/508b12b1546e712d-.gif " width="110 " height="80 ">
+                                    <img onclick="video() " class="imgvid " src=" https://media.giphy.com/media/BLCHvwl9C5j1u/giphy.gif " width="80 " height="80 ">
+                                    <img onclick="video() " class="imgvid " src="https://thumbs.gfycat.com/DeepImpishBubblefish-small.gif " width="110 " height="80 ">
+                                    <img onclick="video() " class="imgvid " src=" https://media.giphy.com/media/7CPPm2qysqX7O/giphy.gif " width="110 " height="80 ">
+                                    <img onclick="video() " class="imgvid " src="https://tenor.com/view/ski-lift-ski-lift-fall-ski-lift-fail-snowboarder-fall-snowboarder-fail-gif-11485440.gif " width=" 80 " height="120 ">
+                                    <img onclick="video() " class="imgvid " src="https://i.pinimg.com/originals/08/51/a5/0851a5e6480652df61816f1deee3bde0.gif " width=" 80 " height="120 ">
+                                    <img onclick="video() " class="imgvid " src="https://media.giphy.com/media/EatwJZRUIv41G/giphy.gif " width=" 110 " height="80 ">
+                                    <img onclick="video() " class="imgvid " src="https://media.giphy.com/media/FkRPVDEcrC45W/giphy.gif " width=" 110 " height="80 ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header py-0" id="headingImg">
+                            <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseImg" aria-expanded="false" aria-controls="collapseImg" class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
+                                    Images
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseImg" class="collapse" aria-labelledby="headingImg" data-parent="#accordion">
+                            <div class="card-body">
+                                <div>
+                                    <a>Images</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="component()" src="media/image.jpg" width="40" height="40">
+                                    <img onclick="component()" src="media/image2.jpg" width="40" height="40">
+                                    <img onclick="component()" src="media/image3.jpg" width="40" height="40">
+                                    <img onclick="component()" src="media/image4.jpg" width="40" height="40">
+                                    <img onclick="component()" src="media/image5.jpg" width="40" height="40">
+                                    <img onclick="component()" src="media/image6.jpg" width="40" height="40">
+                                    <img onclick="component()" src="media/image7.jpg" width="40" height="40">
+                                    <img onclick="component()" src="media/image8.jpg" width="40" height="40">
+                                    <img onclick="component()" src="media/image9.jpg" width="40" height="40">
+                                    <img onclick="component()" src="media/image10.jpg" width="40" height="40">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header py-0" id="headingAud">
+                            <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseAud" aria-expanded="false" aria-controls="collapseAud" class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
+                                    Audio
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseAud" class="collapse" aria-labelledby="headingAud" data-parent="#accordion">
+                            <div class="card-body">
+                                <div>
+                                    <a>Audio</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="audio()" src="media/frozen22.jpg" width="40" height="40">
+                                    <img onclick="audio()" src="media/boku.jpg" width="40" height="40">
+                                    <img onclick="audio()" src="media/boyz2men.jpg" width="40" height="40">
+                                    <img onclick="audio()" src="media/evermore.jpg" width="40" height="40">
+                                    <img onclick="audio()" src="media/fearless.jpg" width="40" height="40">
+                                    <img onclick="audio()" src="media/folklore.jpg" width="40" height="40">
+                                    <img onclick="audio()" src="media/folkloregarden.jpg" width="40" height="40">
+                                    <img onclick="audio()" src="media/mariah.jpg" width="40" height="40">
+                                    <img onclick="audio()" src="media/redswan.jpg" width="40" height="40">
+                                </div>
+                                </br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </br>
+                <h3> Templates </h3>
+
+                <div class="accordion shadow " id="accordion">
+                    <div class="card">
+                        <div class="card-header py-0" id="headingTemp">
+                            <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseTemp" aria-expanded="false" aria-controls="collapseTemp" class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
+                                    Templates
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseTemp" class="collapse" aria-labelledby="headingTemp" data-parent="#accordion">
+                            <div class="card-body">
+                                <div>
+                                    <a>Templates</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="audio()" src="media/cat1.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/monkey.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/dog.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/bird.jpg" width="40" height="40">
+                                    <img onclick="audio()" src="media/squirrel.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/car.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/plane.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/ocean.jpg" width="40" height="40">
+                                    <img onclick="audio()" src="media/dishes.jpg" width="40" height="40">
+                                    <img onclick="audio()" src="media/robot.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/haha.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/tap.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/wind.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/bolt.png" width="40" height="40">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Video Player-->
+            <div class="col-6 ">
+                <h1></h1>
+                <div class="embed-responsive embed-responsive-16by9 ">
+                    <iframe class="embed-responsive-item " src="media/RollerCoasters.mp4 "></iframe>
+                </div>
+                <!--Video Section-->
+            </div>
+
+            <div class="col-3 long">
+                <!--Edits Section-->
+                <h3>Edits</h3>
+
+                <div class="accordion shadow " id="accordion">
+                    <div class="card">
+                        <div class="card-header py-0" id="headingOne">
+                            <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
+                                    Filters
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <div>
+                                    <a>Filters</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="component() " src="media/vidbw.png " title="Black and White" width="70 " height="40 ">
+                                    <img onclick="component() " src="media/vidsepia.png " title="Sepia" width="70 " height="40 ">
+                                    <img onclick="component() " src="media/videocool.png " title="Cool" width="70 " height="40 ">
+                                    <img onclick="component() " src="media/videowarm.png " title="Warm" width="70 " height="40 ">
+                                    <img onclick="component() " src="media/videodramatic.png " title="Dramatic" width="70 " height="40 ">
+                                    <img onclick="component() " src="media/videonoir.png " title="Noir" width="70 " height="40 ">
+                                    <img onclick="component() " src="media/videovivid.png " title="Vivid" width="70 " height="40 ">
+                                </div>
+                                </br>
+                                <label for="colorpicker">Select Colour:</label>
+                                <input type="color" id="colorpicker" value="#0000ff">
+                                <div class="slidecontainer">
+                                    <span>Select Intensity:</span> </br>
+                                    <span class="font-weight-bold indigo-text">0</span>
+                                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange2">
+                                    <span class="font-weight-bold indigo-text">100</span>
+                                    </br>
+                                    <p>Value: <span id="demo2" class="sliderval"></span></p>
+                                </div>
+                                <script>
+                                    var slider = document.getElementById("myRange2");
+                                    var output = document.getElementById("demo2");
+                                    output.innerHTML = slider.value;
+
+                                    slider.oninput = function() {
+                                        output.innerHTML = this.value;
+                                    }
+                                </script>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header py-0" id="headingTwo">
+                            <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
+                                    Editing
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <div>
+                                    <a>Adjustments</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="adjustment() " src="media/brightness.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/contrast.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/color.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/sharpen.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/grain.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/light.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/shadows.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/highlights.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/saturation.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/structure.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/temp.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/vignette.png " width="40 " height="40 ">
+                                </div>
+                                <div class="slidecontainer">
+                                    <span>Select Intensity:</span> </br>
+                                    <span class="font-weight-bold indigo-text">0</span>
+                                    <input type="range" min="1" max="100" value="50" class="slider" id="intense">
+                                    <span class="font-weight-bold indigo-text">100</span>
+                                    </br>
+                                    <p>Value: <span id="adjust" class="sliderval"></span></p>
+                                </div>
+                                <script>
+                                    var slider1 = document.getElementById("intense");
+                                    var output1 = document.getElementById("adjust");
+                                    output1.innerHTML = slider1.value;
+
+                                    slider1.oninput = function() {
+                                        output1.innerHTML = this.value;
+                                    }
+                                </script>
+                                </br>
+                                <div>
+                                    <a>Positioning</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="adjustment() " src="media/angle.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/fixed.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/flip.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/reshape.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/resize.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/restore.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/rotate.png " width="40 " height="40 ">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header py-0" id="headingThree">
+                            <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
+                                    Cropping
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                <div>
+                                    <a>Cropping</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="adjustment() " src="media/crop.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/9-16.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/8-10.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/5-7.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/3-4.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/3-5.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/2-3.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/1-1.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/21-9.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/16-9.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/4-3.png " width="40 " height="40 ">
+                                </div>
+                                </br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header py-0" id="headingFour">
+                            <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
+                                    Sounds
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body">
+                                <div>
+                                    <a>Sounds</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="audio()" src="media/cat1.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/monkey.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/dog.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/bird.jpg" width="40" height="40">
+                                    <img onclick="audio()" src="media/squirrel.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/car.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/plane.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/ocean.jpg" width="40" height="40">
+                                    <img onclick="audio()" src="media/dishes.jpg" width="40" height="40">
+                                    <img onclick="audio()" src="media/robot.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/haha.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/tap.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/wind.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/bolt.png" width="40" height="40">
+                                </div>
+                                </br>
+                                <div>
+                                    <a>Voice Filters</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="audio()" src="media/mouse.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/robot.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/megaphone.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/echo.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/autotune.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/anon.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/pitch.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/alien.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/batman.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/male.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/female.png" width="40" height="40">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header py-0" id="headingFive">
+                            <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
+                                    Intros/Outros
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                            <div class="card-body">
+                                <div>
+                                    <a>Intros</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="adjustment() " src="media/Avengers.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/Daredevil.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/Friends.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/Gotham.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/Lucifer.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/News.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/Sherlock.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/Starwars.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/StrangerThings.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/Supernatural.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/The100.png " width="40 " height="40 ">
+                                </div>
+                                </br>
+                                <div>
+                                    <a>Outros</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="audio()" src="media/mouse.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/robot.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/megaphone.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/echo.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/autotune.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/anon.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/pitch.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/alien.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/batman.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/male.png" width="40" height="40">
+                                    <img onclick="audio()" src="media/female.png" width="40" height="40">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-header py-0" id="headingSix">
+                            <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
+                                    Extras
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                            <div class="card-body">
+                                <div>
+                                    <a>Stickers</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="component() " src="media/Sticker1.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/Sticker2.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/Sticker3.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/Sticker4.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/Sticker5.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/Sticker6.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/Sticker7.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/Sticker8.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/Sticker9.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/Sticker10.png " width="40 " height="40 ">
+                                </div>
+                                </br>
+                                <div>
+                                    <a>Face Filters</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="component() " src="media/FaceFilter1.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/FaceFilter2.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/FaceFilter3.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/FaceFilter4.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/FaceFilter5.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/FaceFilter6.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/FaceFilter7.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/FaceFilter8.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/FaceFilter9.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/FaceFilter10.png " width="40 " height="40 ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header py-0" id="headingSeven">
+                            <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
+                                    Presets
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                            <div class="card-body">
+                                <div>
+                                    <a>Saved Presets</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="preset() " src="media/wpreset.png " width="40 " height="40 ">
+                                    <img onclick="preset() " src="media/cpreset.png " width="40 " height="40 ">
+                                    <img onclick="preset() " src="media/vpreset.png " width="40 " height="40 ">
+                                    <img onclick="preset() " src="media/gpreset.png " width="40 " height="40 ">
+                                    <img onclick="preset() " src="media/bpreset.png " width="40 " height="40 ">
+                                    <img onclick="preset() " src="media/tpreset.png " width="40 " height="40 ">
+                                    <img onclick="preset() " src="media/ipreset.png " width="40 " height="40 ">
+                                    <img onclick="preset() " src="media/birpreset.png " width="40 " height="40 ">
+                                    <img onclick="preset() " src="media/npreset.png " width="40 " height="40 ">
+                                    <img onclick="preset() " src="media/spreset.png " width="40 " height="40 ">
+                                </div>
+                                </br>
+                                <div class=" col-sm-4 d-flex btn-group dropright justify-content-center ">
+                                    <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown">Create
+                                        Preset
+                                        <span class="caret"></span></button>
+                                    <ul class="dropdown-menu ">
+                                        <li>
+                                            <form class="form-inline ">
+                                                <input class="form-control" type="columns " placeholder="Enter New Preset Name " aria-label="Columns ">
+                                                <button onclick="presetsave()" class="btn btn-outline-dark my-2 my-sm-0 " type="submit ">Save</button>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header py-0" id="headingEight">
+                            <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight" class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
+                                    Text
+                                </a>
+                            </h5>
+
+                        </div>
+
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                            <div class="card-body">
+                                <div>
+                                    <a>Text Styles</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="component() " src="media/Text1.png " width="50 " height="40 ">
+                                    <img onclick="component() " src="media/Text2.png " width="50 " height="40 ">
+                                    <img onclick="component() " src="media/Text3.png " width="50 " height="40 ">
+                                    <img onclick="component() " src="media/Text4.png " width="50 " height="40 ">
+                                    <img onclick="component() " src="media/Text5.png " width="50 " height="40 ">
+                                    <img onclick="component() " src="media/Text6.png " width="50 " height="40 ">
+                                    <img onclick="component() " src="media/Text7.png " width="50 " height="40 ">
+                                    <img onclick="component() " src="media/Text8.png " width="50 " height="40 ">
+                                    <img onclick="component() " src="media/Text9.png " width="50 " height="40 ">
+                                    <img onclick="component() " src="media/Text10.png " width="50 " height="40 ">
+                                </div>
+                                </br>
+                                <label for="colorpicker">Select Colour:</label>
+                                <input type="color" id="colorpicker" value="#0000ff">
+                                <div class="slidecontainer">
+                                    <span>Select Text Size:</span> </br>
+                                    <span class="font-weight-bold indigo-text">0</span>
+                                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange8">
+                                    <span class="font-weight-bold indigo-text">100</span>
+                                    </br>
+                                    <p>Value: <span id="demo8" class="sliderval"></span></p>
+                                </div>
+                                <script>
+                                    var slider8 = document.getElementById("myRange8");
+                                    var output8 = document.getElementById("demo8");
+                                    output8.innerHTML = slider8.value;
+
+                                    slider8.oninput = function() {
+                                        output8.innerHTML = this.value;
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <h3>Toolbar</h3>
+                <div class="toolbar">
+                    <div class="row">
+                        <div class="column">
+                            <div class="btn-group-vertical">
+                                <img onclick="tool()" src=" media/hand.png " width="40 " height="40 ">
+                                <img onclick="tool()" src="media/cursor.png " width="40 " height="40 ">
+                                <img onclick="tool()" src="media/scissors.png " width="40 " height="40 ">
+                                <img onclick="tool()" src="media/pen.png " width="40 " height="40">
+
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="btn-group-vertical">
+                                <img onclick="tool()" src="media/undo.png " width="40 " height="40 ">
+                                <img onclick="tool()" src="media/redo.png " width="40 " height="40 ">
+                                <img onclick="tool()" src="media/eraser.png " width="40 " height="40 ">
+                                <img onclick="tool()" src="media/ripple.png " width="40 " height="40 ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11">
+                <h3>Video Timeline</h3>
+                <div class="videotl">
+                    <div class='ruler'>
+                        <div class='cm'>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                        </div>
+                        <div class='cm'>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                        </div>
+                        <div class='cm'>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                        </div>
+                        <div class='cm'>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                        </div>
+                        <div class='cm'>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                        </div>
+                        <div class='cm'>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                        </div>
+                        <div class='cm'>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                        </div>
+                        <div class='cm'>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                        </div>
+                        <div class='cm'>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                        </div>
+                        <div class='cm'>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                        </div>
+                        <div class='cm'>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                            <div class='mm'></div>
+                        </div>
+                        <div class='cm'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Bootstrap Text-->
+    <!-- <button type="button " data-toggle="dropdown " class="btn btn-dark ">Charts</button>
+                                <button type="button " class="btn btn-dark ">Tables</button>-->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns " crossorigin="anonymous "></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js " integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF " crossorigin="anonymous "></script>
+    -->
+</body>
+
+</html>
+
+</html>
+
+</html>
+
+</html>
