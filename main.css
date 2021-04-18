@@ -6,7 +6,6 @@ body {
     width: 100%;
     white-space: nowrap;
     overflow-x: scroll;
-    overflow-y: hidden;
 }
 
 .cover-container-big {
@@ -457,7 +456,6 @@ a {
 .ruler {
     position: relative;
     width: 97%;
-    margin: 20px auto;
     height: 14px;
 }
 
@@ -579,6 +577,86 @@ a {
     content: "5:30";
 }
 
+.ruler .cm:nth-of-type(13) {
+    left: 120%;
+}
+
+.ruler .cm:nth-of-type(13):after {
+    content: "6:00";
+}
+
+.ruler .cm:nth-of-type(14) {
+    left: 130%;
+}
+
+.ruler .cm:nth-of-type(14):after {
+    content: "6:30";
+}
+
+.ruler .cm:nth-of-type(15) {
+    left: 140%;
+}
+
+.ruler .cm:nth-of-type(15):after {
+    content: "7:00";
+}
+
+.ruler .cm:nth-of-type(16) {
+    left: 150%;
+}
+
+.ruler .cm:nth-of-type(16):after {
+    content: "7:30";
+}
+
+.ruler .cm:nth-of-type(17) {
+    left: 160%;
+}
+
+.ruler .cm:nth-of-type(17):after {
+    content: "8:00";
+}
+
+.ruler .cm:nth-of-type(18) {
+    left: 170%;
+}
+
+.ruler .cm:nth-of-type(18):after {
+    content: "8:30";
+}
+
+.ruler .cm:nth-of-type(19) {
+    left: 180%;
+}
+
+.ruler .cm:nth-of-type(19):after {
+    content: "9:00";
+}
+
+.ruler .cm:nth-of-type(20) {
+    left: 190%;
+}
+
+.ruler .cm:nth-of-type(20):after {
+    content: "9:30";
+}
+
+.ruler .cm:nth-of-type(21) {
+    left: 200%;
+}
+
+.ruler .cm:nth-of-type(21):after {
+    content: "10:00";
+}
+
+.ruler .cm:nth-of-type(22) {
+    left: 210%;
+}
+
+.ruler .cm:nth-of-type(22):after {
+    content: "10:30";
+}
+
 .ruler .mm:nth-of-type(1) {
     left: 10%;
 }
@@ -626,6 +704,24 @@ a {
 
 .videotl {
     background: white;
-    height: 200px;
+    height: 240px;
+    white-space: nowrap;
     overflow-x: scroll;
+}
+
+.labelColumn {
+    width: 450px;
+}
+
+.labelColumn2 {
+    width: 410px;
+}
+
+.mediaLabel{
+    width: 44.25px;
+    font-size: small;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+    overflow: hidden;
 }
