@@ -725,3 +725,41 @@ a {
     float: left;
     overflow: hidden;
 }
+
+.vidrow{
+display: flex;
+}
+
+.fig{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 150px;
+    height: 150px;
+}
+.caption1{
+    margin-top: 30px;
+}
+.caption2{
+    margin-top: -1px;
+}
+.caption3{
+    margin-top: 29px;
+}
+.caption4{
+    margin-top: -1px;
+}
+.caption5{
+    margin-top: 29px;
+}
+.caption6{
+    margin-top: 29px;
+}
+.caption7{
+    margin-top: 29px;
+}
+.caption8{
+    margin-top: 20px;
+}
+.caption9{
+    margin-top: 20px;
+}
