@@ -74,6 +74,15 @@ body {
     height: 40vh;
 }
 
+.row {
+    display: flex;
+  }
+  
+.column {
+    flex: 33.33%;
+    padding: 0.5px;
+}
+
 .col-11 {
     height: 40vh;
 }
