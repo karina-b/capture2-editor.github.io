@@ -213,7 +213,7 @@
             <!--Audio Section-->
             <div class="col-3">
 
-                <h3> Your Library </h3>
+                <h3> Imported Media </h3>
 
                 <div class="accordion shadow " id="accordion">
                     <div class="card">
@@ -567,59 +567,35 @@
 
                 <div class="accordion shadow " id="accordion">
                     <div class="card">
-                        <div class="card-header py-0" id="headingOne">
+                        <div class="card-header py-0" id="headingThree">
                             <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse"
-                                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
                                     class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
-                                    Filters
+                                    Cropping
                                 </a>
                             </h5>
                         </div>
-
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordion">
                             <div class="card-body">
                                 <div>
-                                    <a>Filters</a>
+                                    <a>Cropping</a>
                                 </div>
                                 <div class="cover-container ">
-                                    <img onclick="component() " src="media/vidbw.png " title="Black and White"
-                                        width="70 " height="40 ">
-                                    <img onclick="component() " src="media/vidsepia.png " title="Sepia" width="70 "
-                                        height="40 ">
-                                    <img onclick="component() " src="media/videocool.png " title="Cool" width="70 "
-                                        height="40 ">
-                                    <img onclick="component() " src="media/videowarm.png " title="Warm" width="70 "
-                                        height="40 ">
-                                    <img onclick="component() " src="media/videodramatic.png " title="Dramatic"
-                                        width="70 " height="40 ">
-                                    <img onclick="component() " src="media/videonoir.png " title="Noir" width="70 "
-                                        height="40 ">
-                                    <img onclick="component() " src="media/videovivid.png " title="Vivid" width="70 "
-                                        height="40 ">
+                                    <img onclick="adjustment() " src="media/crop.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/9-16.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/8-10.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/5-7.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/3-4.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/3-5.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/2-3.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/1-1.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/21-9.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/16-9.png " width="40 " height="40 ">
+                                    <img onclick="adjustment() " src="media/4-3.png " width="40 " height="40 ">
                                 </div>
                                 </br>
-                                <label for="colorpicker">Select Colour:</label>
-                                <input type="color" id="colorpicker" value="#0000ff">
-                                <div class="slidecontainer">
-                                    <span>Select Intensity:</span> </br>
-                                    <span class="font-weight-bold indigo-text">0</span>
-                                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange2">
-                                    <span class="font-weight-bold indigo-text">100</span>
-                                    </br>
-                                    <p>Value: <span id="demo2" class="sliderval"></span></p>
-                                </div>
-                                <script>
-                                    var slider = document.getElementById("myRange2");
-                                    var output = document.getElementById("demo2");
-                                    output.innerHTML = slider.value;
-
-                                    slider.oninput = function () {
-                                        output.innerHTML = this.value;
-                                    }
-                                </script>
-
                             </div>
-
                         </div>
                     </div>
                     <div class="card">
@@ -653,7 +629,7 @@
                                 <div class="slidecontainer">
                                     <span>Select Intensity:</span> </br>
                                     <span class="font-weight-bold indigo-text">0</span>
-                                    <input type="range" min="1" max="100" value="50" class="slider" id="intense">
+                                    <input type="range" min="0" max="100" value="50" class="slider" id="intense">
                                     <span class="font-weight-bold indigo-text">100</span>
                                     </br>
                                     <p>Value: <span id="adjust" class="sliderval"></span></p>
@@ -685,35 +661,58 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header py-0" id="headingThree">
+                        <div class="card-header py-0" id="headingOne">
                             <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
                                     class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
-                                    Cropping
+                                    Filters
                                 </a>
                             </h5>
                         </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                            data-parent="#accordion">
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
                                 <div>
-                                    <a>Cropping</a>
+                                    <a>Filters</a>
                                 </div>
                                 <div class="cover-container ">
-                                    <img onclick="adjustment() " src="media/crop.png " width="40 " height="40 ">
-                                    <img onclick="adjustment() " src="media/9-16.png " width="40 " height="40 ">
-                                    <img onclick="adjustment() " src="media/8-10.png " width="40 " height="40 ">
-                                    <img onclick="adjustment() " src="media/5-7.png " width="40 " height="40 ">
-                                    <img onclick="adjustment() " src="media/3-4.png " width="40 " height="40 ">
-                                    <img onclick="adjustment() " src="media/3-5.png " width="40 " height="40 ">
-                                    <img onclick="adjustment() " src="media/2-3.png " width="40 " height="40 ">
-                                    <img onclick="adjustment() " src="media/1-1.png " width="40 " height="40 ">
-                                    <img onclick="adjustment() " src="media/21-9.png " width="40 " height="40 ">
-                                    <img onclick="adjustment() " src="media/16-9.png " width="40 " height="40 ">
-                                    <img onclick="adjustment() " src="media/4-3.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/vidbw.png " title="Black and White"
+                                        width="70 " height="40 ">
+                                    <img onclick="component() " src="media/vidsepia.png " title="Sepia" width="70 "
+                                        height="40 ">
+                                    <img onclick="component() " src="media/videocool.png " title="Cool" width="70 "
+                                        height="40 ">
+                                    <img onclick="component() " src="media/videowarm.png " title="Warm" width="70 "
+                                        height="40 ">
+                                    <img onclick="component() " src="media/videodramatic.png " title="Dramatic"
+                                        width="70 " height="40 ">
+                                    <img onclick="component() " src="media/videonoir.png " title="Noir" width="70 "
+                                        height="40 ">
+                                    <img onclick="component() " src="media/videovivid.png " title="Vivid" width="70 "
+                                        height="40 ">
                                 </div>
                                 </br>
+                                <label for="colorpicker">Select Colour:</label>
+                                <input type="color" id="colorpicker" value="#0000ff">
+                                <div class="slidecontainer">
+                                    <span>Select Intensity:</span> </br>
+                                    <span class="font-weight-bold indigo-text">0</span>
+                                    <input type="range" min="0" max="100" value="50" class="slider" id="myRange2">
+                                    <span class="font-weight-bold indigo-text">100</span>
+                                    </br>
+                                    <p>Value: <span id="demo2" class="sliderval"></span></p>
+                                </div>
+                                <script>
+                                    var slider = document.getElementById("myRange2");
+                                    var output = document.getElementById("demo2");
+                                    output.innerHTML = slider.value;
+
+                                    slider.oninput = function () {
+                                        output.innerHTML = this.value;
+                                    }
+                                </script>
+
                             </div>
+
                         </div>
                     </div>
                     <div class="card">
@@ -746,6 +745,23 @@
                                     <img onclick="audio()" src="media/wind.png" width="40" height="40">
                                     <img onclick="audio()" src="media/bolt.png" width="40" height="40">
                                 </div>
+                                <div class="slidecontainer">
+                                    <span>Select Volume:</span> </br>
+                                    <span class="font-weight-bold indigo-text">0</span>
+                                    <input type="range" min="0" max="100" value="50" class="slider" id="soundvol">
+                                    <span class="font-weight-bold indigo-text">100</span>
+                                    </br>
+                                    <p>Volume: <span id="adjustvol" class="sliderval"></span></p>
+                                </div>
+                                <script>
+                                    var slider11 = document.getElementById("soundvol");
+                                    var output11 = document.getElementById("adjustvol");
+                                    output1.innerHTML = slider1.value;
+
+                                    slider11.oninput = function () {
+                                        output11.innerHTML = this.value;
+                                    }
+                                </script>
                                 </br>
                                 <div>
                                     <a>Voice Filters</a>
@@ -762,6 +778,166 @@
                                     <img onclick="audio()" src="media/batman.png" width="40" height="40">
                                     <img onclick="audio()" src="media/male.png" width="40" height="40">
                                     <img onclick="audio()" src="media/female.png" width="40" height="40">
+                                </div>
+                                <div class="slidecontainer">
+                                    <span>Select Volume:</span> </br>
+                                    <span class="font-weight-bold indigo-text">0</span>
+                                    <input type="range" min="0" max="100" value="50" class="slider" id="voicevol">
+                                    <span class="font-weight-bold indigo-text">100</span>
+                                    </br>
+                                    <p>Volume: <span id="adjustvoice" class="sliderval"></span></p>
+                                </div>
+                                <script>
+                                    var slider12 = document.getElementById("voicevol");
+                                    var output12 = document.getElementById("adjustvoice");
+                                    output12.innerHTML = slider12.value;
+
+                                    slider12.oninput = function () {
+                                        output12.innerHTML = this.value;
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header py-0" id="headingEight">
+                            <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse"
+                                    data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"
+                                    class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
+                                    Text
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <div>
+                                    <a>Text Styles</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="component() " src="media/Text1.png " width="50 " height="40 ">
+                                    <img onclick="component() " src="media/Text2.png " width="50 " height="40 ">
+                                    <img onclick="component() " src="media/Text3.png " width="50 " height="40 ">
+                                    <img onclick="component() " src="media/Text4.png " width="50 " height="40 ">
+                                    <img onclick="component() " src="media/Text5.png " width="50 " height="40 ">
+                                    <img onclick="component() " src="media/Text6.png " width="50 " height="40 ">
+                                    <img onclick="component() " src="media/Text7.png " width="50 " height="40 ">
+                                    <img onclick="component() " src="media/Text8.png " width="50 " height="40 ">
+                                    <img onclick="component() " src="media/Text9.png " width="50 " height="40 ">
+                                    <img onclick="component() " src="media/Text10.png " width="50 " height="40 ">
+                                </div>
+                                </br>
+                                <label for="colorpicker">Select Colour:</label>
+                                <input type="color" id="colorpicker" value="#0000ff">
+                                <div class="slidecontainer">
+                                    <span>Select Text Size:</span> </br>
+                                    <span class="font-weight-bold indigo-text">0</span>
+                                    <input type="range" min="0" max="100" value="50" class="slider" id="myRange8">
+                                    <span class="font-weight-bold indigo-text">100</span>
+                                    </br>
+                                    <p>Value: <span id="demo8" class="sliderval"></span></p>
+                                </div>
+                                <script>
+                                    var slider8 = document.getElementById("myRange8");
+                                    var output8 = document.getElementById("demo8");
+                                    output8.innerHTML = slider8.value;
+
+                                    slider8.oninput = function () {
+                                        output8.innerHTML = this.value;
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header py-0" id="headingSix">
+                            <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse"
+                                    data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
+                                    class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
+                                    Extras
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                            <div class="card-body">
+                                <div>
+                                    <a>Stickers</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="component() " src="media/Sticker1.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/Sticker2.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/Sticker3.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/Sticker4.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/Sticker5.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/Sticker6.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/Sticker7.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/Sticker8.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/Sticker9.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/Sticker10.png " width="40 " height="40 ">
+                                </div>
+                                </br>
+                                <div>
+                                    <a>Face Filters</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="component() " src="media/FaceFilter1.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/FaceFilter2.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/FaceFilter3.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/FaceFilter4.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/FaceFilter5.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/FaceFilter6.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/FaceFilter7.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/FaceFilter8.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/FaceFilter9.png " width="40 " height="40 ">
+                                    <img onclick="component() " src="media/FaceFilter10.png " width="40 " height="40 ">
+                                </div>
+                                </br>
+                                <div>
+                                    <a>GIFs</a>
+                                </div>
+                                <div class="cover-container ">
+                                    <img onclick="component()"
+                                        src="https://media.giphy.com/media/KdC9XVrVYOVu6zZiMH/giphy.gif" width="40"
+                                        height="40">
+                                    <img onclick="component()"
+                                        src="https://media.giphy.com/media/MDyQUUIy7sRApfjRT1/giphy.gif" width="70"
+                                        height="40">
+                                    <img onclick="component()"
+                                        src="https://media.giphy.com/media/KK9CNep9UpRKM/giphy.gif" width="40"
+                                        height="40">
+                                    <img onclick="component()"
+                                        src="https://media.giphy.com/media/jKaFXbKyZFja0/giphy.gif" width="50"
+                                        height="40">
+                                    <img onclick="component()"
+                                        src="https://media.giphy.com/media/O5ac76MtFGPHG/giphy.gif" width="40"
+                                        height="40">
+                                    <img onclick="component()"
+                                        src="https://media.giphy.com/media/jAe22Ec5iICCk/giphy.gif" width="50"
+                                        height="40">
+                                    <img onclick="component()"
+                                        src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="40"
+                                        height="40">
+                                    <img onclick="component()"
+                                        src="https://media.giphy.com/media/o9ngTPVYW4qo8/giphy.gif" width="40"
+                                        height="40">
+                                    <img onclick="component()"
+                                        src="https://media.giphy.com/media/fvmz3gCAip1M4/giphy.gif" width="40"
+                                        height="40">
+                                    <img onclick="component()"
+                                        src="https://media.giphy.com/media/SWKyABQ08mbXW/giphy.gif" width="40"
+                                        height="40">
+                                    <img onclick="component()"
+                                        src="https://media.giphy.com/media/ff0dv4KMGxjna/giphy.gif" width="40"
+                                        height="40">
+                                    <img onclick="component()"
+                                        src="https://media.giphy.com/media/26uTs96mzTS70tYAw/giphy.gif" width="40"
+                                        height="40">
+                                    <img onclick="component()"
+                                        src="https://media.giphy.com/media/U23WekMlGy6cImpMim/giphy.gif" width="50"
+                                        height="40 ">
+                                    <img onclick="component()"
+                                        src="https://media.giphy.com/media/pJu3xzRa2PzTq/giphy.gif" width="40"
+                                        height="40">
                                 </div>
                             </div>
                         </div>
@@ -815,52 +991,6 @@
                         </div>
                     </div>
 
-
-                    <div class="card">
-                        <div class="card-header py-0" id="headingSix">
-                            <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse"
-                                    data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
-                                    class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
-                                    Extras
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-                            <div class="card-body">
-                                <div>
-                                    <a>Stickers</a>
-                                </div>
-                                <div class="cover-container ">
-                                    <img onclick="component() " src="media/Sticker1.png " width="40 " height="40 ">
-                                    <img onclick="component() " src="media/Sticker2.png " width="40 " height="40 ">
-                                    <img onclick="component() " src="media/Sticker3.png " width="40 " height="40 ">
-                                    <img onclick="component() " src="media/Sticker4.png " width="40 " height="40 ">
-                                    <img onclick="component() " src="media/Sticker5.png " width="40 " height="40 ">
-                                    <img onclick="component() " src="media/Sticker6.png " width="40 " height="40 ">
-                                    <img onclick="component() " src="media/Sticker7.png " width="40 " height="40 ">
-                                    <img onclick="component() " src="media/Sticker8.png " width="40 " height="40 ">
-                                    <img onclick="component() " src="media/Sticker9.png " width="40 " height="40 ">
-                                    <img onclick="component() " src="media/Sticker10.png " width="40 " height="40 ">
-                                </div>
-                                </br>
-                                <div>
-                                    <a>Face Filters</a>
-                                </div>
-                                <div class="cover-container ">
-                                    <img onclick="component() " src="media/FaceFilter1.png " width="40 " height="40 ">
-                                    <img onclick="component() " src="media/FaceFilter2.png " width="40 " height="40 ">
-                                    <img onclick="component() " src="media/FaceFilter3.png " width="40 " height="40 ">
-                                    <img onclick="component() " src="media/FaceFilter4.png " width="40 " height="40 ">
-                                    <img onclick="component() " src="media/FaceFilter5.png " width="40 " height="40 ">
-                                    <img onclick="component() " src="media/FaceFilter6.png " width="40 " height="40 ">
-                                    <img onclick="component() " src="media/FaceFilter7.png " width="40 " height="40 ">
-                                    <img onclick="component() " src="media/FaceFilter8.png " width="40 " height="40 ">
-                                    <img onclick="component() " src="media/FaceFilter9.png " width="40 " height="40 ">
-                                    <img onclick="component() " src="media/FaceFilter10.png " width="40 " height="40 ">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="card">
                         <div class="card-header py-0" id="headingSeven">
                             <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse"
@@ -909,58 +1039,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header py-0" id="headingEight">
-                            <h5 class="card-title mb-0 font-weight-bold"><a href="#" data-toggle="collapse"
-                                    data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"
-                                    class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
-                                    Text
-                                </a>
-                            </h5>
-
-                        </div>
-
-                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
-                            data-parent="#accordion">
-                            <div class="card-body">
-                                <div>
-                                    <a>Text Styles</a>
-                                </div>
-                                <div class="cover-container ">
-                                    <img onclick="component() " src="media/Text1.png " width="50 " height="40 ">
-                                    <img onclick="component() " src="media/Text2.png " width="50 " height="40 ">
-                                    <img onclick="component() " src="media/Text3.png " width="50 " height="40 ">
-                                    <img onclick="component() " src="media/Text4.png " width="50 " height="40 ">
-                                    <img onclick="component() " src="media/Text5.png " width="50 " height="40 ">
-                                    <img onclick="component() " src="media/Text6.png " width="50 " height="40 ">
-                                    <img onclick="component() " src="media/Text7.png " width="50 " height="40 ">
-                                    <img onclick="component() " src="media/Text8.png " width="50 " height="40 ">
-                                    <img onclick="component() " src="media/Text9.png " width="50 " height="40 ">
-                                    <img onclick="component() " src="media/Text10.png " width="50 " height="40 ">
-                                </div>
-                                </br>
-                                <label for="colorpicker">Select Colour:</label>
-                                <input type="color" id="colorpicker" value="#0000ff">
-                                <div class="slidecontainer">
-                                    <span>Select Text Size:</span> </br>
-                                    <span class="font-weight-bold indigo-text">0</span>
-                                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange8">
-                                    <span class="font-weight-bold indigo-text">100</span>
-                                    </br>
-                                    <p>Value: <span id="demo8" class="sliderval"></span></p>
-                                </div>
-                                <script>
-                                    var slider8 = document.getElementById("myRange8");
-                                    var output8 = document.getElementById("demo8");
-                                    output8.innerHTML = slider8.value;
-
-                                    slider8.oninput = function () {
-                                        output8.innerHTML = this.value;
-                                    }
-                                </script>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="col-1">
@@ -968,16 +1046,16 @@
                 <div class="toolbar">
                     <div class="row">
                         <div class="column">
-                          <img onclick="tool()" src="media/hand.png" width="48" height="60">
-                          <img onclick="tool()" src="media/cursor.png" width="48" height="60">
-                          <img onclick="tool()" src="media/scissors.png" width="48" height="60">
-                          <img onclick="tool()" src="media/pen.png" width="48" height="60">
+                            <img onclick="tool()" src="media/hand.png" width="48" height="60">
+                            <img onclick="tool()" src="media/cursor.png" width="48" height="60">
+                            <img onclick="tool()" src="media/scissors.png" width="48" height="60">
+                            <img onclick="tool()" src="media/pen.png" width="48" height="60">
                         </div>
                         <div class="column">
-                          <img onclick="tool()" src="media/undo.png" width="48" height="60">
-                          <img onclick="tool()" src="media/redo.png" width="48" height="60">
-                          <img onclick="tool()" src="media/eraser.png" width="48" height="60">
-                          <img onclick="tool()" src="media/ripple.png" width="48" height="60">
+                            <img onclick="tool()" src="media/undo.png" width="48" height="60">
+                            <img onclick="tool()" src="media/redo.png" width="48" height="60">
+                            <img onclick="tool()" src="media/eraser.png" width="48" height="60">
+                            <img onclick="tool()" src="media/ripple.png" width="48" height="60">
                         </div>
                     </div>
                 </div>
