@@ -354,7 +354,7 @@ a {
 }
 
 .slidecontainer {
-    width: 87%;
+    width: 100%;
     /* Width of the outside container */
     margin: auto;
     margin-bottom: 5pt;
@@ -771,4 +771,9 @@ display: flex;
 }
 .caption9{
     margin-top: 20px;
+}
+
+.presetsave
+{
+    margin-left: 25px;
 }
