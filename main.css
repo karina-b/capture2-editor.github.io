@@ -777,3 +777,10 @@ display: flex;
 {
     margin-left: 25px;
 }
+
+.audioCorner {
+    border-radius: 25px;
+    background: #5dc1f0;
+    width: 2715px;
+    height: 25px;  
+  }
